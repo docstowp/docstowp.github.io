@@ -59,7 +59,7 @@ const seoProps: AstroSeoProps = merge(
     noindex: typeof robots?.index !== 'undefined' ? !robots.index : undefined,
     nofollow: typeof robots?.follow !== 'undefined' ? !robots.follow : undefined,
     description: description,
-    openGraph: { url: canonical,  ...openGraph },
+    openGraph: { url: canonical, ...openGraph },
     twitter: twitter,
   }
 );

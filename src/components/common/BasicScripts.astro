@@ -105,7 +105,7 @@ import { UI } from 'astrowind:config';
       newlink.click();
     });
 
-    let screenSize = window.matchMedia('(max-width: 767px)');
+    const screenSize = window.matchMedia('(max-width: 767px)');
     screenSize.addEventListener('change', function () {
       document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
       document.body.classList.remove('overflow-hidden');
@@ -118,10 +118,11 @@ import { UI } from 'astrowind:config';
 
     function applyHeaderStylesOnScroll() {
       const header = document.querySelector('#header[data-aw-sticky-header]');
+      if (!header) return;
       if (lastKnownScrollPosition > 60 && !header.classList.contains('scroll')) {
-        document.getElementById('header').classList.add('scroll');
+        header.classList.add('scroll');
       } else if (lastKnownScrollPosition <= 60 && header.classList.contains('scroll')) {
-        document.getElementById('header').classList.remove('scroll');
+        header.classList.remove('scroll');
       }
       ticking = false;
     }
