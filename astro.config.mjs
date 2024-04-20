@@ -57,5 +57,5 @@ export default defineConfig({
       }
     }
   },
-  site: 'https://www.thinksolv.com'
+  site: 'https://www.docstowp.pro'
 });
