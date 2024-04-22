@@ -3,7 +3,7 @@ import type { ItemGrid as Props } from '~/types';
 import { twMerge } from 'tailwind-merge';
 import Button from './Button.astro';
 import { Icon } from 'astro-icon/components';
-
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter'
 const { items = [], columns, defaultIcon = '', classes = {} } = Astro.props;
 
 const {
@@ -34,17 +34,17 @@ const {
     >
       {items.map(({ title, description, icon, callToAction, classes: itemClasses = {} }) => (
         <div>
-          <div class={twMerge('flex flex-row max-w-md', panelClass, itemClasses?.panel)}>
+          <div class={twMerge('flex flex-row ', panelClass, itemClasses?.panel)}>
             <div class="flex justify-center">
               {(icon || defaultIcon) && (
                 <Icon
                   name={icon || defaultIcon}
-                  class={twMerge('w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2', defaultIconClass, itemClasses?.icon)}
+                  class={twMerge('w-1 h-1 mr-2 rtl:mr-0 rtl:ml-2', defaultIconClass, itemClasses?.icon)}
                 />
               )}
             </div>
             <div class="mt-0.5">
-              {title && <h3 class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</h3>}
+              {title && <h3 class={twMerge('  primary-colour-text', titleClass, itemClasses?.title)}>{title}</h3>}
               {description && (
                 <p
                   class={twMerge(`${title ? 'mt-3' : ''} text-muted`, descriptionClass, itemClasses?.description)}

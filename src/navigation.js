@@ -1,69 +1,35 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink,getHomePermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        }
-      ],
+      text: 'Home',
+      href: getHomePermalink(),
+      
     },
     {
       text: 'Pages',
       links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
+        
         {
           text: 'Terms',
-          href: getPermalink('/terms'),
+          href: getPermalink('/terms-of-services'),
         },
         {
           text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          href: getPermalink('/privacy-policy'),
         },
       ],
     },
     
     {
       text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
+      href: getBlogPermalink(),
+      
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
+   
   ],
-  actions: [{ text: 'Install free add on', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Install free add on', href: 'https://workspace.google.com/marketplace/app/docs_to_wp_pro/346830534164?utm_source=docstowp.pro&utm_medium=main_menu_install_free_add-on&utm_id=app_home', target: '_blank' }],
 };
 
 export const footerData = {
@@ -80,16 +46,7 @@ export const footerData = {
         { text: 'Resources', href: '#' },
       ],
     },
-    {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
-    },
+    
     {
       title: 'Support',
       links: [
@@ -100,22 +57,11 @@ export const footerData = {
         { text: 'Status', href: '#' },
       ],
     },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
+    
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms', href: getPermalink('/terms-of-services') },
+    { text: 'Privacy Policy', href: getPermalink('/privacy-policy') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
