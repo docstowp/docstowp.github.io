@@ -80,4 +80,5 @@ export default defineConfig({
       },
     },
   },
+  site: 'https://www.docstowp.pro'
 });

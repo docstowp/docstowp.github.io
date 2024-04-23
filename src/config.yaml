@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Docs to WordPress Pro
-    template: '%s — AstroWind'
+    default: Convert Google Docs to WordPress
+    template: '%s'
   description: "Convert Google Docs to WordPress in a single Click"
   robots:
     index: true
