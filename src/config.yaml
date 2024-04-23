@@ -1,6 +1,6 @@
 site:
   name: Docs to WordPress Pro
-  site: 'https://astrowind.vercel.app'
+  site: 'https://www.docstowp.pro'
   base: '/'
   trailingSlash: false
 
