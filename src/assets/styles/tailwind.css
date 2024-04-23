@@ -129,8 +129,10 @@ body .home-icons-grid {
     column-gap: 13px;
     flex-wrap: wrap;
     margin-top: 80px;
+   
 }
 
+/*This is for larger screens*/
 @media (min-width: 901px) {
     .home-icons-grid {
         flex-wrap: wrap;
@@ -139,10 +141,10 @@ body .home-icons-grid {
 
     /* Four items in a row for larger screens */
     .home-grid-item {
-        flex-basis: 9% !important;
+        flex-basis: 8% !important;
     }
 }
-
+/*This is for small screens*/
 @media(max-width: 900px) {
     body .home-icons-grid {
         flex-wrap: wrap;
