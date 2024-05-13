@@ -30,7 +30,10 @@ export const headerData = {
       text: 'Blog',
       href: getBlogPermalink(),
       
-    },
+    },{
+        text: 'Contact',
+        href: getPermalink('/contact-us'),
+      },
    
   ],
   actions: [{ text: 'Install free add on', href: 'https://workspace.google.com/marketplace/app/docs_to_wp_pro/346830534164?utm_source=docstowp.pro&utm_medium=main_menu_install_free_add-on&utm_id=app_home', target: '_blank' }],
