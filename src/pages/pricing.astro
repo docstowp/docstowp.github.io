@@ -15,11 +15,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText
-    tagline=""
-    title="Pricing"
-    subtitle="Choose the perfect plan that aligns with your publishing goals."
-  />
+  <HeroText tagline="" title="Pricing" subtitle="Choose the perfect plan that aligns with your publishing goals." />
 
   <!-- Pricing Widget ******************* -->
 
@@ -33,7 +29,6 @@ const metadata = {
         price: 39,
         period: 'per year',
         items: [
-          
           {
             description: 'Upto 400 exports',
           },
@@ -65,7 +60,6 @@ const metadata = {
         price: 99,
         period: 'Per year',
         items: [
-        
           {
             description: 'Upto 1000 exports',
           },
@@ -96,10 +90,10 @@ const metadata = {
       {
         title: 'Enterprise',
         subtitle: 'Optimal choice for publishing companies',
-        price: 199 ,
+        price: 199,
         period: 'Per year',
         items: [
-        {
+          {
             description: '2500 exports',
           },
           {
@@ -134,7 +128,6 @@ const metadata = {
     subtitle="Discover the advantages of choosing our plans"
     columns={2}
     items={[
-      
       {
         title: 'Secure Payment Methods',
         description: 'Secure payment gateways to protect your financial information during transactions.',
@@ -159,7 +152,6 @@ const metadata = {
     classes={{ container: 'max-w-5xl' }}
   />
 
-
   <!-- FAQs Widget ******************* -->
 
   <FAQs
@@ -172,7 +164,7 @@ const metadata = {
         description:
           'Absolutely, all plans include access to our dedicated email customer support to assist you with any queries or concerns.',
       },
-     
+
       {
         title: 'Can I switch between plans?',
         description:
@@ -189,14 +181,22 @@ const metadata = {
           'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
       },
       {
+        title:
+          'Why is the image compression quota lower in each plan compared to the number of exports in the respective plan?',
+        description:
+          'Because Google Docs compresses images by default when you paste them, our image compression features are necessary only when you use very large images. For example, if an image is more than 50 MB, Google Docs will compress it to approximately 5 MB. Docs to WP Pro can help you compress it further.',
+      },
+      {
+        title: 'What if I need more internal link credits to SEO optimize my posts?',
+        description:
+          'Please contact us to get additional internal link credits within your existing subscription plan.',
+      },
+
+      {
         title: 'Are there any custom plans available if we have high usage requirements?',
         description:
           'Yes, for businesses with exceptionally high usage requirements, we offer customized Enterprise plans. Contact us today to discuss your specific needs and receive a tailored pricing quote.',
       },
-
-      
-
-
     ]}
   />
   <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
